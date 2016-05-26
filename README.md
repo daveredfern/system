@@ -5,6 +5,7 @@ A WordPress theme for my personal website. The goals of this theme is to be as f
 This theme uses gulp to process front end assets. Preprocessing is based on Jake Cobleys work https://github.com/JakeCobley/gulpfile.js.
 
 To start working:
+
 1. `CD` to directory of the theme.
 2. Run `npm install`. This can take a few minutes.
 3. Run one of the following commands `npm run watch` or `npm run build` to begin watching or building the files.
