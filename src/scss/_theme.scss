@@ -1,0 +1,45 @@
+// =============================================
+// White Text
+// =============================================
+
+%t-color-white {
+    color: $light-grey;
+
+    blockquote {
+        border-left-color: $light-grey;
+    }
+
+    a {
+        color: $yellow;
+    }
+
+    h1, h2, h3,
+    .h1, .h2, .h3,
+    .lead,
+    .logo a {
+        color: $light-grey;
+    }
+
+    hr {
+        border-bottom-color: $light-grey;
+    }
+}
+
+%t-color-black {
+    color: $dark-grey;
+
+    blockquote {
+        border-left-color: $dark-grey;
+    }
+
+    a,
+    .lead,
+    h1, h2, h3,
+    .h1, .h2, .h3 {
+        color: $dark-grey;
+    }
+
+    hr {
+        border-bottom-color: $dark-grey;
+    }
+}

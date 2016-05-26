@@ -1,0 +1,155 @@
+// =============================================
+// Font Anti aliasing magic
+// =============================================
+
+// @media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+// only screen and ( min-device-pixel-ratio: 1.25),
+// only screen and ( min-resolution: 200dpi),
+// only screen and ( min-resolution: 1.25dppx) {
+//     html {
+//         -webkit-font-smoothing: subpixel-antialiased;
+//     }
+// }
+
+
+// =============================================
+// Typography
+// =============================================
+
+html {
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+    color: $grey;
+    background-color: $light-grey;
+    -webkit-text-size-adjust: 100%;
+    font-size: 110%;
+
+
+    @media(min-width: $screen-lg) {
+        font-size: 120%;
+    }
+
+    @media(min-width: $screen-xl) {
+        font-size: 130%;
+    }
+}
+
+body {
+    padding: 1.618em;
+
+    @media(min-width: $screen-sm) {
+        padding: 3em;
+    }
+
+    @media(min-width: $screen-md) {
+        padding: 4em;
+    }
+}
+
+p, ul, ol {
+    margin-bottom: 1.618em;
+}
+
+
+ul, ol {
+    padding-left: 1em;
+
+    @media(min-width: $screen-sm) {
+        padding-left: 0;
+    }
+
+    > * {
+        margin-bottom: 0.5em;
+    }
+}
+
+
+* + p, * + ul, * + ol {
+    margin-top: 1.3em;
+}
+
+blockquote {
+    border-left: 3px solid $grey;
+    padding-left: 1.618em;
+    margin-left: 0;
+
+    > p {
+        font-family: $serif-font-family;
+        font-style: italic;
+    }
+
+    @media(min-width: $screen-sm) {
+        margin-left: calc(-1.618em - 3px);
+
+        > p {
+            font-size: $lg-font-size;
+        }
+    }
+}
+
+pre {
+    background-color: $light-grey;
+    padding: 2em;
+    overflow-x: auto;
+}
+
+strong, b {
+	font-weight: 600;
+    color: $dark-grey;
+}
+
+em, i, cite {
+    font-style: italic;
+}
+
+code {
+    padding: 0.15em 0.5em;
+    color: $red;
+    vertical-align: text-top;
+    font-size: $sm-font-size;
+    border-radius: $border-radius;
+    background-color: $white;
+    border: 1px solid lighten($red, 20%);
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px solid $grey;
+    margin-top: 2.618em;
+    margin-bottom: 2.618em;
+}
+
+
+// =============================================
+// Links
+// =============================================
+
+a,
+%link {
+    color: $blue;
+    touch-action: manipulation;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+
+// =============================================
+// Lead
+// =============================================
+
+// .lead {
+//     font-size: $lg-font-size;
+//     color: $dark-grey;
+// }
+
+
+// =============================================
+// Micro
+// =============================================
+
+.micro {
+    font-size: $sm-font-size;
+}

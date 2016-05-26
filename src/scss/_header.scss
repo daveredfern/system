@@ -1,0 +1,56 @@
+// =============================================
+// current menu item
+// =============================================
+
+.current-menu-item {
+    opacity: 0.5;
+}
+
+
+// =============================================
+// Logo
+// =============================================
+
+.logo {
+    margin-bottom: 0.8em;
+
+    a {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        color: $dark-grey;
+
+        &:hover,
+        &:hover span {
+            opacity: 1;
+        }
+    }
+    span {
+        opacity: 0;
+        display: inline-block;
+        margin-left: 0.5em;
+        transition: opacity 0.3s ease;
+    }
+}
+
+.logo-icon {
+    display: block;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: $dark-grey;
+    border-radius: $border-radius;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0.3em;
+        right: 0.3em;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 0.4em 0.9em;
+        border-color: transparent transparent $light-grey transparent;
+    }
+}

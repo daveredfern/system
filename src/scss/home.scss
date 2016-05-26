@@ -1,0 +1,22 @@
+// =============================================
+// Imports
+// =============================================
+
+@import "variables";
+@import "theme";
+
+
+// =============================================
+// Home
+// =============================================
+
+.home {
+    background-color: $yellow;
+    @extend %t-color-black;
+
+    .logo-icon {
+        &:after {
+            border-bottom-color: $yellow;
+        }
+    }
+}
