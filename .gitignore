@@ -38,7 +38,3 @@ npm-debug.log
 .profile
 .ssh
 log
-
-
-# Temp files
-build

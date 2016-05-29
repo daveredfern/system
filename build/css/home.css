@@ -1,0 +1,13 @@
+.home {
+  color: #111; }
+  .home blockquote {
+    border-left-color: #111; }
+  .home a, .home .lead, .home h1, .home h2, .home h3, .home .h1, .home .h2, .home .h3 {
+    color: #111; }
+  .home hr {
+    border-bottom-color: #111; }
+
+.home {
+  background-color: #49FFF7; }
+  .home .logo-icon:after {
+    border-bottom-color: #49FFF7; }
