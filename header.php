@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="u-section">
         <div class="logo">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="logo-icon"></i><span> <?php bloginfo( 'name' ); ?></span></a>
         </div>

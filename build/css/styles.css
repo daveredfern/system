@@ -97,7 +97,8 @@ h1, h2, h3,
   margin-top: 1.618em; }
 
 h1, .h1 {
-  font-size: 2em; }
+  font-size: 2em;
+  font-weight: 900; }
   @media (min-width: 35em) {
     h1, .h1 {
       font-size: 2.5em; } }
@@ -204,9 +205,6 @@ img {
   @media (min-width: 85em) {
     .g-three-up > * {
       width: 33.33%; } }
-
-.header {
-  margin-bottom: 8vh; }
 
 .current-menu-item {
   opacity: 0.5; }
