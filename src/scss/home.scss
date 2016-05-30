@@ -11,7 +11,8 @@
 // =============================================
 
 .home {
-    background-color: $turquoise;
+    background: $turquoise url(/wp-content/themes/system/build/img/dave.svg) no-repeat center center;
+    background-size: cover;
     @extend %t-color-black;
 
     .logo-icon {

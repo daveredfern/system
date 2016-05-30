@@ -8,6 +8,7 @@
     border-bottom-color: #111; }
 
 .home {
-  background-color: #49FFF7; }
+  background: #49FFF7 url(/wp-content/themes/system/build/img/dave.svg) no-repeat center center;
+  background-size: cover; }
   .home .logo-icon:after {
     border-bottom-color: #49FFF7; }
