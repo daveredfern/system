@@ -27,24 +27,24 @@
 
 
 // =============================================
-// Black Text
+// Black blue
 // =============================================
 
-%t-color-black {
-    color: $dark-grey;
+%t-color-blue {
+    color: $blue;
 
     blockquote {
-        border-left-color: $dark-grey;
+        border-left-color: $blue;
     }
 
     a,
     .lead,
     h1, h2, h3,
     .h1, .h2, .h3 {
-        color: $dark-grey;
+        color: $blue;
     }
 
     hr {
-        border-bottom-color: $dark-grey;
+        border-bottom-color: $blue;
     }
 }

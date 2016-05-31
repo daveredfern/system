@@ -12,7 +12,7 @@
 
 .home {
     background: $turquoise;
-    @extend %t-color-black;
+    @extend %t-color-blue;
 
     .logo-icon {
         &:after {
