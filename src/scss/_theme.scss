@@ -10,7 +10,7 @@
     }
 
     a {
-        color: $turquoise;
+        color: $yellow;
     }
 
     h1, h2, h3,
@@ -30,21 +30,25 @@
 // Black blue
 // =============================================
 
-%t-color-blue {
-    color: $blue;
+%t-color-black {
+    color: $black;
 
     blockquote {
-        border-left-color: $blue;
+        border-left-color: $black;
     }
 
     a,
     .lead,
     h1, h2, h3,
     .h1, .h2, .h3 {
-        color: $blue;
+        color: $black;
     }
 
     hr {
-        border-bottom-color: $blue;
+        border-bottom-color: $black;
+    }
+
+    .logo-icon {
+        background-color: $black;
     }
 }

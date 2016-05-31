@@ -28,6 +28,10 @@ p, ul, ol {
     margin-bottom: 1.618em;
 }
 
+pre {
+    margin-bottom: 2.4em;
+}
+
 
 ul, ol {
     padding-left: 1em;
@@ -65,12 +69,6 @@ blockquote {
     }
 }
 
-pre {
-    background-color: $light-grey;
-    padding: 2em;
-    overflow-x: auto;
-}
-
 strong, b {
 	font-weight: 600;
     color: $dark-grey;
@@ -84,10 +82,15 @@ code {
     padding: 0.15em 0.5em;
     color: $red;
     vertical-align: text-top;
-    font-size: $sm-font-size;
     border-radius: $border-radius;
     background-color: $white;
     border: 1px solid lighten($red, 20%);
+}
+
+pre code {
+    display: block;
+    padding: 1.5em;
+    overflow-x: auto;
 }
 
 hr {
