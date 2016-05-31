@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
-    <div class="u-container u-container--lg u-section">
+    <div class="u-container u-container--lg">
         <h1>Writing</h1>
     </div>
     <div class="g-two-up">
