@@ -20,6 +20,11 @@ html {
     }
 }
 
+::selection {
+    background-color: $blue;
+    color: $light-grey;
+}
+
 body {
     padding: 7vw;
 }
