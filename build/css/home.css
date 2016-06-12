@@ -1,1 +1,15 @@
-.home{color:#000}.home blockquote{border-left-color:#000}.home .h1,.home .h2,.home .h3,.home .lead,.home a,.home h1,.home h2,.home h3{color:#000}.home hr{border-bottom-color:#000}.home .logo-icon{background-color:#000}.home{background:#fff667}.home .logo-icon:after{border-bottom-color:#fff667}
+.home {
+  color: #000; }
+  .home blockquote {
+    border-left-color: #000; }
+  .home a, .home .lead, .home h1, .home h2, .home h3, .home .h1, .home .h2, .home .h3 {
+    color: #000; }
+  .home hr {
+    border-bottom-color: #000; }
+  .home .logo-icon {
+    background-color: #000; }
+
+.home {
+  background: #FFF667; }
+  .home .logo-icon:after {
+    border-bottom-color: #FFF667; }

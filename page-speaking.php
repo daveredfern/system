@@ -43,7 +43,7 @@ Template Name: Speaking
 					endif;
 				?>
 	        	<p><strong><?php the_title(); ?></strong><br />
-					<?php echo $talk->post_title; ?>
+					<a href="<?php echo get_the_permalink($talk->ID); ?>"><?php echo $talk->post_title; ?></a>
 				</p>
 	        <?php
 			endwhile; endif;
@@ -62,7 +62,7 @@ Template Name: Speaking
 				);
 				$talks = new WP_Query( $args );
 				if ( $talks->have_posts() ) : while ( $talks->have_posts() ) : $talks->the_post(); ?>
-					<li><?php the_title(); ?></li>
+					<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				<?php
 				endwhile; endif;
 				wp_reset_query();
