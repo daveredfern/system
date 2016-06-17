@@ -1,9 +1,7 @@
 <?php
-
 /*
 Template Name: Speaking
 */
-
 ?>
 <?php get_header(); ?>
 

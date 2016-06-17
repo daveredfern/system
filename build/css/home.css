@@ -1,15 +1,15 @@
 .home {
-  color: #000; }
+  color: #401147; }
   .home blockquote {
-    border-left-color: #000; }
+    border-left-color: #401147; }
   .home a, .home .lead, .home h1, .home h2, .home h3, .home .h1, .home .h2, .home .h3 {
-    color: #000; }
+    color: #401147; }
   .home hr {
-    border-bottom-color: #000; }
+    border-bottom-color: #401147; }
   .home .logo-icon {
-    background-color: #000; }
+    background-color: #401147; }
 
 .home {
-  background: #FFF667; }
+  background: #04f081; }
   .home .logo-icon:after {
-    border-bottom-color: #FFF667; }
+    border-bottom-color: #04f081; }

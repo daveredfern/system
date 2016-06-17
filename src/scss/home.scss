@@ -11,12 +11,12 @@
 // =============================================
 
 .home {
-    background: $yellow;
+    background: $green;
     @extend %t-color-black;
 
     .logo-icon {
         &:after {
-            border-bottom-color: $yellow;
+            border-bottom-color: $green;
         }
     }
 }

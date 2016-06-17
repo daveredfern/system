@@ -31,24 +31,24 @@
 // =============================================
 
 %t-color-black {
-    color: $black;
+    color: $purple;
 
     blockquote {
-        border-left-color: $black;
+        border-left-color: $purple;
     }
 
     a,
     .lead,
     h1, h2, h3,
     .h1, .h2, .h3 {
-        color: $black;
+        color: $purple;
     }
 
     hr {
-        border-bottom-color: $black;
+        border-bottom-color: $purple;
     }
 
     .logo-icon {
-        background-color: $black;
+        background-color: $purple;
     }
 }

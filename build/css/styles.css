@@ -140,6 +140,15 @@ h3, .h3 {
     h3, .h3 {
       font-size: 1.44em; } }
 
+h4, .h4 {
+  font-size: 1em; }
+  @media (min-width: 59em) {
+    h4, .h4 {
+      font-size: 1.1em; } }
+  @media (min-width: 66em) {
+    h4, .h4 {
+      font-size: 1.2em; } }
+
 img {
   display: block;
   max-width: 100%;
@@ -215,7 +224,7 @@ img {
   @media (min-width: 35em) {
     .g-three-up > * {
       width: 50%; } }
-  @media (min-width: 85em) {
+  @media (min-width: 66em) {
     .g-three-up > * {
       width: 33.33%; } }
 
