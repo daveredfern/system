@@ -6,7 +6,9 @@ add_theme_support( 'title-tag' );
 
 wp_oembed_add_provider('http://codepen.io/*/pen/*', 'http://codepen.io/api/oembed');
 
-add_image_size( 'photography-square', 500, 500, false);
+add_image_size( 'photography-square-sm', 400, 600, false);
+add_image_size( 'photography-square-md', 600, 900, false);
+add_image_size( 'photography-square-lg', 800, 1200, false);
 add_image_size( 'photography', 1500, 5000, false);
 
 register_nav_menus( array(
