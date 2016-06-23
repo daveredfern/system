@@ -13,7 +13,7 @@ html {
   @media (min-width: 66em) {
     html {
       font-size: 120%; } }
-  @media (min-width: 85em) {
+  @media (min-width: 90em) {
     html {
       font-size: 130%; } }
 
@@ -202,7 +202,7 @@ img {
     .g-three-up > * {
       width: 50%; } }
 
-@media (min-width: 85em) {
+@media (min-width: 90em) {
   .g-three-up > * {
     width: 33.33%; } }
 

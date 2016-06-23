@@ -14,7 +14,7 @@
                              srcset="<?php the_post_thumbnail_url('photography-square-lg'); ?> 800w,
                                      <?php the_post_thumbnail_url('photography-square-md'); ?> 600w,
                                      <?php the_post_thumbnail_url('photography-square-sm'); ?> 400w"
-                             sizes="(min-width: 35em) 41vw, (min-width: 85em) 26vw, 100vw"
+                             sizes="(min-width: 35em) 41vw, (min-width: 90em) 26vw, 100vw"
                              alt="<?php the_title(); ?>" />
                     <?php endif; ?>
                 </a>
