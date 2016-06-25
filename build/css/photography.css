@@ -16,7 +16,10 @@
             column-width: 40vw;
     -webkit-column-gap: 4vw;
        -moz-column-gap: 4vw;
-            column-gap: 4vw; } }
+            column-gap: 4vw;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; } }
 
 @media (min-width: 90em) {
   .g-masonry {
@@ -25,7 +28,10 @@
             column-width: 26vw; } }
 
 .g-masonry > * {
-  margin-bottom: 4vw; }
+  margin-bottom: 4vw;
+  /* below fixes wrapping issues */
+  display: inline-block;
+  width: 100%; }
 
 .g-masonry img {
   width: 100%; }

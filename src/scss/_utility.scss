@@ -63,10 +63,31 @@
 
 
 // =============================================
-// List inline
+// Reset type
 // =============================================
 
 .u-reset-type {
     line-height: $base-line-height;
     margin-top: 0;
+}
+
+
+// =============================================
+// Ratio
+// =============================================
+
+.u-ratio {
+    position: relative;
+	overflow: hidden;
+    padding-top: 100%;
+    overflow: hidden;
+    background-color: lighten($dark-grey, 8%);
+
+    > * {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+    }
 }

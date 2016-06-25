@@ -6,6 +6,9 @@
     @media(min-width: $screen-sm) {
         column-width: 40vw;
         column-gap: 4vw;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 
     @media(min-width: $screen-xl) {
@@ -14,6 +17,9 @@
 
     > * {
         margin-bottom: 4vw;
+        /* below fixes wrapping issues */
+        display: inline-block;
+        width: 100%;
     }
 
     img {

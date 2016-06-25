@@ -182,6 +182,19 @@ img {
   line-height: 1.618;
   margin-top: 0; }
 
+.u-ratio {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+  overflow: hidden;
+  background-color: #252525; }
+  .u-ratio > * {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px; }
+
 [class*="g-t"] {
   display: -ms-flexbox;
   display: flex;

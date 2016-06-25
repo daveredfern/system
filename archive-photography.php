@@ -8,16 +8,26 @@
     <div class="g-masonry">
         <?php while ( have_posts() ) : the_post(); ?>
             <div>
-                <a href="<?php the_permalink(); ?>">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <img src="<?php the_post_thumbnail_url('photography-square-sm'); ?>"
-                             srcset="<?php the_post_thumbnail_url('photography-square-lg'); ?> 800w,
-                                     <?php the_post_thumbnail_url('photography-square-md'); ?> 600w,
-                                     <?php the_post_thumbnail_url('photography-square-sm'); ?> 400w"
-                             sizes="(min-width: 35em) 41vw, (min-width: 90em) 26vw, 100vw"
-                             alt="<?php the_title(); ?>" />
-                    <?php endif; ?>
-                </a>
+                <?php
+            		$image_id = get_post_thumbnail_id();
+            		$image = wp_get_attachment_image_src( $image_id, 'full' );
+            		$width = $image[1];
+            		$height = $image[2];
+                    $ratio = ($height/$width)*100;
+
+            	?>
+                <div class="u-ratio" style="padding-top: <?php echo $ratio; ?>%">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <img src="<?php the_post_thumbnail_url('photography-square-sm'); ?>"
+                                 srcset="<?php the_post_thumbnail_url('photography-square-lg'); ?> 800w,
+                                         <?php the_post_thumbnail_url('photography-square-md'); ?> 600w,
+                                         <?php the_post_thumbnail_url('photography-square-sm'); ?> 400w"
+                                 sizes="(min-width: 35em) 41vw, (min-width: 90em) 26vw, 100vw"
+                                 alt="<?php the_title(); ?>" />
+                        <?php endif; ?>
+                    </a>
+                </div>
             </div>
         <?php endwhile; ?>
     </div>
