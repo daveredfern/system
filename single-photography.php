@@ -1,13 +1,20 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+	<?php
+		$image_id = get_post_thumbnail_id();
+		$image = wp_get_attachment_image_src( $image_id, 'full' );
+		$width = $image[1];
+		$unsplash = get_field('unsplash_link');
+	?>
 	<div class="u-container u-container--lg u-section">
 		<h1><?php the_title(); ?></h1>
 	</div>
 	<?php if(has_post_thumbnail()) : ?>
 		<div class="u-section">
 			<img src="<?php the_post_thumbnail_url('photography-square-sm'); ?>"
-				 srcset="<?php the_post_thumbnail_url('photography'); ?> 1500w,
+				 srcset="<?php the_post_thumbnail_url('photography'); ?> <?php echo $width; ?>w,
 						 <?php the_post_thumbnail_url('photography-square-lg'); ?> 800w,
 						 <?php the_post_thumbnail_url('photography-square-md'); ?> 600w,
 						 <?php the_post_thumbnail_url('photography-square-sm'); ?> 400w"
