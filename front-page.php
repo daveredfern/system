@@ -40,6 +40,7 @@
 		<ul>
 			<li><a href="https://www.twitter.com/daveredfern">@daveredfern</a></li>
 			<li><a href="mailto:dave@daveredfern.com">dave@daveredfern.com</a></li>
+			<li><a href="https://github.com/daveredfern">Github</a></li>
 			<li><a href="https://uk.linkedin.com/in/daveredfern">LinkedIn</a></li>
 		</ul>
 	</div>
