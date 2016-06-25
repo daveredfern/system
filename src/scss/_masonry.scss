@@ -1,0 +1,22 @@
+// =============================================
+// Masonry
+// =============================================
+
+.g-masonry {
+    @media(min-width: $screen-sm) {
+        column-width: 40vw;
+        column-gap: 4vw;
+    }
+
+    @media(min-width: $screen-xl) {
+        column-width: 26vw;
+    }
+
+    > * {
+        margin-bottom: 4vw;
+    }
+
+    img {
+        width: 100%;
+    }
+}

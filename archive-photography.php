@@ -5,7 +5,7 @@
         <h1><?php post_type_archive_title(); ?></h1>
         <p>All my photos are free to use, released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero license</a>. If you use a photo I'd love to know! My <a href="/contact">contact info is here</a>.</p>
     </div>
-    <div class="g-three-up g-center">
+    <div class="g-masonry">
         <?php while ( have_posts() ) : the_post(); ?>
             <div>
                 <a href="<?php the_permalink(); ?>">

@@ -9,6 +9,27 @@
   .photography hr {
     border-bottom-color: #f9f9f5; }
 
+@media (min-width: 35em) {
+  .g-masonry {
+    -webkit-column-width: 40vw;
+       -moz-column-width: 40vw;
+            column-width: 40vw;
+    -webkit-column-gap: 4vw;
+       -moz-column-gap: 4vw;
+            column-gap: 4vw; } }
+
+@media (min-width: 90em) {
+  .g-masonry {
+    -webkit-column-width: 26vw;
+       -moz-column-width: 26vw;
+            column-width: 26vw; } }
+
+.g-masonry > * {
+  margin-bottom: 4vw; }
+
+.g-masonry img {
+  width: 100%; }
+
 .photography {
   background-color: #111; }
   .photography .logo-icon {
