@@ -11,6 +11,7 @@
 						 <?php the_post_thumbnail_url('photography-square-lg'); ?> 800w,
 						 <?php the_post_thumbnail_url('photography-square-md'); ?> 600w,
 						 <?php the_post_thumbnail_url('photography-square-sm'); ?> 400w"
+				 sizes="86vw"
 				 alt="<?php the_title(); ?>" />
 		</div>
 	<?php endif; ?>
