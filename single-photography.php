@@ -13,11 +13,13 @@
 	</div>
 	<?php if(has_post_thumbnail()) : ?>
 		<div class="u-section">
-			<img src="<?php the_post_thumbnail_url('photography-square-sm'); ?>"
-				 srcset="<?php the_post_thumbnail_url('photography'); ?> <?php echo $width; ?>w,
-						 <?php the_post_thumbnail_url('photography-square-lg'); ?> 800w,
-						 <?php the_post_thumbnail_url('photography-square-md'); ?> 600w,
-						 <?php the_post_thumbnail_url('photography-square-sm'); ?> 400w"
+			<img class="u-full"
+				 src="<?php the_post_thumbnail_url('photography-xs'); ?>"
+				 srcset="<?php the_post_thumbnail_url('photography-xl'); ?> 1500w,
+						 <?php the_post_thumbnail_url('photography-lg'); ?> 1200w,
+						 <?php the_post_thumbnail_url('photography-md'); ?> 800w,
+						 <?php the_post_thumbnail_url('photography-sm'); ?> 600w,
+						 <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
 				 sizes="86vw"
 				 alt="<?php the_title(); ?>" />
 		</div>

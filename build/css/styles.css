@@ -195,6 +195,9 @@ img {
     right: -2px;
     bottom: -2px; }
 
+.u-full {
+  width: 100%; }
+
 [class*="g-t"] {
   display: -ms-flexbox;
   display: flex;
