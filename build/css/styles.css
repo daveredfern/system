@@ -216,7 +216,8 @@ img {
   @media (min-width: 35em) {
     .g-two-up > *,
     .g-three-up > * {
-      width: 50%; } }
+      width: 50%;
+      max-width: 35em; } }
 
 @media (min-width: 90em) {
   .g-three-up > * {

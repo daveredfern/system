@@ -26,6 +26,7 @@
 
     @media(min-width: $screen-sm) {
         width: 50%;
+        max-width: $screen-sm;
     }
 }
 
