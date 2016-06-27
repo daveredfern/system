@@ -11,12 +11,14 @@
                 <?php
             		$image_id = get_post_thumbnail_id();
             		$image = wp_get_attachment_image_src( $image_id, 'full' );
-            		$width = $image[1];
+
+                    $width = $image[1];
             		$height = $image[2];
                     $ratio = ($height/$width)*100;
 
+                    $color = get_post_meta(get_post_thumbnail_id(), 'dominant_color_hex');
             	?>
-                <div class="u-ratio" style="padding-top: <?php echo $ratio; ?>%">
+                <div class="u-ratio" style="padding-top: <?php echo $ratio; ?>%;<?php if($color) { echo ' background-color:' . $color[0] . ';'; } ?>">
                     <a href="<?php the_permalink(); ?>">
                         <?php if ( has_post_thumbnail() ) : ?>
                             <img class="u-full"
