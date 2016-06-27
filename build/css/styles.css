@@ -198,17 +198,22 @@ img {
 .u-full {
   width: 100%; }
 
+.u-portait {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
 [class*="g-t"] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  margin-left: -2vw;
-  margin-right: -2vw; }
+  margin-left: -4vw;
+  margin-right: -4vw; }
   [class*="g-t"] > * {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-bottom: 4vw; }
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-bottom: 8vw; }
 
 .g-two-up > *,
 .g-three-up > * {
@@ -222,6 +227,14 @@ img {
 @media (min-width: 90em) {
   .g-three-up > * {
     width: 33.33%; } }
+
+.g-center {
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+
+.g-limit > * {
+  max-width: 35em; }
 
 .current-menu-item {
   opacity: 0.5; }

@@ -5,13 +5,13 @@
 [class*="g-t"] {
     display: flex;
     flex-flow: wrap;
-    margin-left: -2vw;
-    margin-right: -2vw;
+    margin-left: -4vw;
+    margin-right: -4vw;
 
     > * {
-        padding-left: 2vw;
-        padding-right: 2vw;
-        margin-bottom: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-bottom: 8vw;
     }
 }
 
@@ -42,17 +42,19 @@
 }
 
 
-// // =============================================
-// // Center grid
-// // =============================================
-//
-// .g-center > * {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//
-//     * {
-//         display: block;
-//         width: 100%;
-//     }
-// }
+// =============================================
+// Center grid
+// =============================================
+
+.g-center {
+    align-items: center;
+}
+
+
+// =============================================
+// Limit width
+// =============================================
+
+.g-limit > * {
+    max-width: $screen-sm;
+}

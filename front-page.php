@@ -13,7 +13,7 @@
 <div class="u-container u-container--lg u-section">
 	<hr />
 </div>
-<div class="g-two-up">
+<div class="g-two-up g-limit">
 	<div>
 		<h2>Recent articles</h2>
 		<ul class="u-list-space">
