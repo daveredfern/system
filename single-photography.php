@@ -51,7 +51,7 @@
 	?>
 	    <div class="u-section">
 	        <h2>Choose another photo</h2>
-	        <p>
+	        <p class="h3">
 				<?php
 					while ( $related->have_posts() ) : $related->the_post();
 				?>
