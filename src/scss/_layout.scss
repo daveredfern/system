@@ -20,24 +20,12 @@
 // Two column
 // =============================================
 
-.g-two-up > *,
-.g-three-up > * {
+.g-two-up > * {
     width:100%;
 
     @media(min-width: $screen-sm) {
         width: 50%;
         max-width: $screen-sm;
-    }
-}
-
-
-// =============================================
-// Three column
-// =============================================
-
-@media(min-width: $screen-xl) {
-.g-three-up > * {
-        width: 33.33%;
     }
 }
 

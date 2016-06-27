@@ -215,18 +215,12 @@ img {
     padding-right: 4vw;
     margin-bottom: 8vw; }
 
-.g-two-up > *,
-.g-three-up > * {
+.g-two-up > * {
   width: 100%; }
   @media (min-width: 35em) {
-    .g-two-up > *,
-    .g-three-up > * {
+    .g-two-up > * {
       width: 50%;
       max-width: 35em; } }
-
-@media (min-width: 90em) {
-  .g-three-up > * {
-    width: 33.33%; } }
 
 .g-center {
   -ms-flex-align: center;
