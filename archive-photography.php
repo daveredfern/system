@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : ?>
     <div class="u-container u-section">
         <h1><?php post_type_archive_title(); ?></h1>
-        <p>All my photos are free to use, released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero license</a>. If you use a photo I'd love to know! My <a href="/contact">contact info is here</a>.</p>
+        <p>All my photos are free to use, released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero license</a>. If you use a photo <a href="/contact">I'd love to know!</a></p>
     </div>
     <div class="g-two-up g-center">
         <?php while ( have_posts() ) : the_post(); ?>
