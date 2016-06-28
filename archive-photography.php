@@ -29,7 +29,7 @@
                                      srcset="<?php the_post_thumbnail_url('photography-md'); ?> 800w,
                                              <?php the_post_thumbnail_url('photography-sm'); ?> 600w,
                                              <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
-                                     sizes="(min-width: 35em) 41vw, (min-width: 90em) 26vw, 100vw"
+                                     sizes="(min-width: 35em) 41vw, 100vw"
                                      alt="<?php the_title(); ?>" />
                             <?php endif; ?>
                         </a>
