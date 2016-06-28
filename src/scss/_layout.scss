@@ -5,14 +5,17 @@
 .g-two-up {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    margin-left: -4vw;
+    margin-right: -4vw;
 
     > * {
         margin-bottom: 8vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
         width: 100%;
 
         @media(min-width: $screen-sm) {
-            width: calc(50% - 4vw);
+            width: 50%;
         }
     }
 }

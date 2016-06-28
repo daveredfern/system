@@ -208,14 +208,16 @@ img {
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  margin-left: -4vw;
+  margin-right: -4vw; }
   .g-two-up > * {
     margin-bottom: 8vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     width: 100%; }
     @media (min-width: 35em) {
       .g-two-up > * {
-        width: calc(50% - 4vw); } }
+        width: 50%; } }
 
 .g-center {
   -ms-flex-align: center;
