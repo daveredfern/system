@@ -215,7 +215,7 @@ img {
     width: 100%; }
     @media (min-width: 35em) {
       .g-two-up > * {
-        width: calc(50% - 8vw); } }
+        width: calc(50% - 4vw); } }
 
 .g-center {
   -ms-flex-align: center;
