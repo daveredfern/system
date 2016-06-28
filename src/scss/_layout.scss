@@ -10,9 +10,10 @@
     > * {
         margin-bottom: 8vw;
         width: 100%;
-        
+
         @media(min-width: $screen-sm) {
-        width: calc(50% - 8vw);
+            width: calc(50% - 8vw);
+        }
     }
 }
 
