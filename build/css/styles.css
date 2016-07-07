@@ -97,7 +97,8 @@ a {
   a:focus {
     background-color: #0f73ee;
     color: #f9f9f5 !important;
-    outline: 0.2em solid #0f73ee; }
+    outline: 0.2em solid #0f73ee;
+    opacity: 1; }
 
 .micro {
   font-size: 0.9em; }
