@@ -97,7 +97,7 @@ a {
   a:focus {
     background-color: #0f73ee;
     color: #f9f9f5 !important;
-    outline: 0.3em solid #0f73ee; }
+    outline: 0.2em solid #0f73ee; }
 
 .micro {
   font-size: 0.9em; }
@@ -142,7 +142,7 @@ h3, .h3 {
       font-size: 1.32em; } }
   @media (min-width: 66em) {
     h3, .h3 {
-      font-size: 1.44em; } }
+      font-size: 1.5em; } }
 
 h4, .h4 {
   font-size: 1em; }
