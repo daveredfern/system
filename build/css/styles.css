@@ -253,7 +253,7 @@ img {
     .logo a:focus .logo-icon {
       background-color: #fff; }
       .logo a:focus .logo-icon:after {
-        border-bottom-color: #111; }
+        border-bottom-color: #0f73ee; }
   .logo span {
     opacity: 0;
     display: inline-block;
