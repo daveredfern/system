@@ -94,6 +94,9 @@ a {
   transition: opacity 0.3s ease; }
   a:hover {
     opacity: 0.5; }
+  a:focus {
+    background-color: #0f73ee;
+    color: #f9f9f5; }
 
 .micro {
   font-size: 0.9em; }
@@ -240,8 +243,8 @@ img {
         align-items: center;
     color: #111; }
     .logo a:hover,
-    .logo a:hover span, .logo a:active,
-    .logo a:active span {
+    .logo a:hover span, .logo a:focus,
+    .logo a:focus span {
       opacity: 1; }
   .logo span {
     opacity: 0;

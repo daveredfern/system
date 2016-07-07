@@ -123,6 +123,11 @@ a,
     &:hover {
         opacity: 0.5;
     }
+
+    &:focus {
+        background-color: $blue;
+        color: $light-grey;
+    }
 }
 
 

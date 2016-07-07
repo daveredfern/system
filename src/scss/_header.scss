@@ -22,8 +22,8 @@
 
         &:hover,
         &:hover span,
-        &:active,
-        &:active span {
+        &:focus,
+        &:focus span {
             opacity: 1;
         }
     }
