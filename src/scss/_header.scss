@@ -21,7 +21,9 @@
         color: $dark-grey;
 
         &:hover,
-        &:hover span {
+        &:hover span,
+        &:active,
+        &:active span {
             opacity: 1;
         }
     }
