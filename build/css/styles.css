@@ -96,7 +96,7 @@ a {
     opacity: 0.5; }
   a:focus {
     background-color: #0f73ee;
-    color: #f9f9f5;
+    color: #f9f9f5 !important;
     outline: 0.3em solid #0f73ee; }
 
 .micro {
@@ -247,9 +247,6 @@ img {
     .logo a:hover span, .logo a:focus,
     .logo a:focus span {
       opacity: 1; }
-    .logo a:focus,
-    .logo a:focus span {
-      color: #f9f9f5; }
     .logo a:focus .logo-icon {
       background-color: #fff; }
       .logo a:focus .logo-icon:after {
