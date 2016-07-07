@@ -90,8 +90,7 @@ iframe {
 a {
   color: #0f73ee;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  transition: opacity 0.2s ease; }
+      touch-action: manipulation; }
   a:hover {
     opacity: 0.5; }
   a:focus {
