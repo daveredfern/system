@@ -190,8 +190,8 @@ img {
   position: relative;
   overflow: hidden;
   padding-top: 100%;
-  overflow: hidden;
-  background-color: #111; }
+  background-color: #111;
+  display: block; }
   .u-ratio > * {
     position: absolute;
     top: 0;

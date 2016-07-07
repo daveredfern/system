@@ -80,8 +80,8 @@
     position: relative;
 	overflow: hidden;
     padding-top: 100%;
-    overflow: hidden;
     background-color: $dark-grey;
+    display: block;
 
     > * {
         position: absolute;
