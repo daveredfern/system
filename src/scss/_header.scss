@@ -32,13 +32,11 @@
             color: $light-grey;
         }
 
-        &:focus {
-            .logo-icon {
-                background-color: $white;
+        &:focus .logo-icon {
+            background-color: $white;
 
-                &:after {
-                    border-bottom-color: $dark-grey;
-                }
+            &:after {
+                border-bottom-color: $blue;
             }
         }
     }
