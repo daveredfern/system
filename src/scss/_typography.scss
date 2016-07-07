@@ -118,7 +118,7 @@ a,
 %link {
     color: $blue;
     touch-action: manipulation;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 
     &:hover {
         opacity: 0.5;
@@ -129,7 +129,6 @@ a,
         color: $light-grey !important;
         outline: 0.2em solid $blue;
         opacity: 1;
-        transition: background-color 0s;
     }
 }
 

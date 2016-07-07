@@ -91,15 +91,14 @@ a {
   color: #0f73ee;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
-  transition: opacity 0.3s ease; }
+  transition: opacity 0.2s ease; }
   a:hover {
     opacity: 0.5; }
   a:focus {
     background-color: #0f73ee;
     color: #f9f9f5 !important;
     outline: 0.2em solid #0f73ee;
-    opacity: 1;
-    transition: background-color 0s; }
+    opacity: 1; }
 
 .micro {
   font-size: 0.9em; }
