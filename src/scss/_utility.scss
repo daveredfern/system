@@ -81,14 +81,14 @@
 	overflow: hidden;
     padding-top: 100%;
     overflow: hidden;
-    background-color: lighten($dark-grey, 8%);
+    background-color: $dark-grey;
 
     > * {
         position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 

@@ -191,13 +191,13 @@ img {
   overflow: hidden;
   padding-top: 100%;
   overflow: hidden;
-  background-color: #252525; }
+  background-color: #111; }
   .u-ratio > * {
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px; }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .u-full {
   width: 100%; }
