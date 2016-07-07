@@ -129,6 +129,7 @@ a,
         color: $light-grey !important;
         outline: 0.2em solid $blue;
         opacity: 1;
+        transition: background-color 0;
     }
 }
 

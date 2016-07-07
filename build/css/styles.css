@@ -98,7 +98,8 @@ a {
     background-color: #0f73ee;
     color: #f9f9f5 !important;
     outline: 0.2em solid #0f73ee;
-    opacity: 1; }
+    opacity: 1;
+    transition: background-color 0; }
 
 .micro {
   font-size: 0.9em; }
