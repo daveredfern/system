@@ -27,11 +27,6 @@
             opacity: 1;
         }
 
-        &:focus,
-        &:focus span {
-            color: $light-grey;
-        }
-
         &:focus .logo-icon {
             background-color: $white;
 
