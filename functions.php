@@ -1,10 +1,17 @@
 <?php
 
-add_theme_support( 'post-thumbnails' );
+// =============================================
+// Add title meta support
+// =============================================
 
 add_theme_support( 'title-tag' );
 
-wp_oembed_add_provider('http://codepen.io/*/pen/*', 'http://codepen.io/api/oembed');
+
+// =============================================
+// Add post thumbnail support
+// =============================================
+
+add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'photography-xs', 400, 600, false);
 add_image_size( 'photography-sm', 600, 900, false);
@@ -12,10 +19,26 @@ add_image_size( 'photography-md', 800, 1200, false);
 add_image_size( 'photography-lg', 1200, 1800, false);
 add_image_size( 'photography-xl', 1500, 2250, false);
 
+
+// =============================================
+// Add oembed for codepen
+// =============================================
+
+wp_oembed_add_provider('http://codepen.io/*/pen/*', 'http://codepen.io/api/oembed');
+
+
+// =============================================
+// Register a main nav
+// =============================================
+
 register_nav_menus( array(
 	'primary' => esc_html__( 'Primary', 'system' ),
 ) );
 
+
+// =============================================
+// Disable emojicons
+// =============================================
 
 function disable_wp_emojicons() {
 
@@ -33,6 +56,10 @@ function disable_wp_emojicons() {
 }
 add_action( 'init', 'disable_wp_emojicons' );
 
+
+// =============================================
+// Disable various embeds
+// =============================================
 
 function disable_embeds_init() {
 
@@ -53,15 +80,24 @@ function disable_embeds_init() {
 add_action('init', 'disable_embeds_init', 9999);
 
 
+// =============================================
+// Clean up menu classes
+// =============================================
+
 add_filter('nav_menu_css_class', 'my_css_attributes_filter', 100, 1);
 add_filter('nav_menu_item_id', 'my_css_attributes_filter', 100, 1);
 add_filter('page_css_class', 'my_css_attributes_filter', 100, 1);
+
 function my_css_attributes_filter($var) {
 	return is_array($var) ? array_intersect($var, array('current-menu-item')) : '';
 }
 
 
-// Adds classes for custom post types to body_class() and post_class()
+// =============================================
+// Adds classes for custom post types
+// to body_class() and post_class()
+// =============================================
+
 function fb_add_body_class( $class ) {
 	$post_type = 'photography'; // the Post Type
 
