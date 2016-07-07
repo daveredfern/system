@@ -96,7 +96,8 @@ a {
     opacity: 0.5; }
   a:focus {
     background-color: #0f73ee;
-    color: #f9f9f5; }
+    color: #f9f9f5;
+    outline: 0.3em solid #0f73ee; }
 
 .micro {
   font-size: 0.9em; }
@@ -246,6 +247,13 @@ img {
     .logo a:hover span, .logo a:focus,
     .logo a:focus span {
       opacity: 1; }
+    .logo a:focus,
+    .logo a:focus span {
+      color: #f9f9f5; }
+    .logo a:focus .logo-icon {
+      background-color: #fff; }
+      .logo a:focus .logo-icon:after {
+        border-bottom-color: #111; }
   .logo span {
     opacity: 0;
     display: inline-block;

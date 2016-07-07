@@ -127,6 +127,7 @@ a,
     &:focus {
         background-color: $blue;
         color: $light-grey;
+        outline: 0.3em solid $blue;
     }
 }
 
