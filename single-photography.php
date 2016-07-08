@@ -8,11 +8,11 @@
 		$width = $image[1];
 		$unsplash = get_field('unsplash_link');
 	?>
-	<div class="u-container u-container--lg u-section">
-		<h1><?php the_title(); ?></h1>
-	</div>
-	<?php if(has_post_thumbnail()) : ?>
-		<div class="u-section">
+	<div class="u-section">
+		<div class="u-container u-container--lg">
+			<h1><?php the_title(); ?></h1>
+		</div>
+		<?php if(has_post_thumbnail()) : ?>
 			<img class="u-full"
 				 src="<?php the_post_thumbnail_url('photography-xs'); ?>"
 				 srcset="<?php the_post_thumbnail_url('photography-xl'); ?> 1500w,
@@ -22,8 +22,9 @@
 						 <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
 				 sizes="86vw"
 				 alt="<?php the_title(); ?>" />
-		</div>
-	<?php endif; ?>
+		<?php endif; ?>
+	</div>
+	
 	<div class="u-container u-section">
 		<?php the_content(); ?>
 	</div>
