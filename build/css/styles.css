@@ -59,8 +59,7 @@ blockquote {
         font-size: 1.2em; } }
 
 strong, b {
-  font-weight: 600;
-  color: #111; }
+  font-weight: 600; }
 
 em, i, cite {
   font-style: italic; }
@@ -222,6 +221,25 @@ img {
     @media (min-width: 35em) {
       .g-two-up > * {
         width: 50%; } }
+
+.g-four-up {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-left: -4vw;
+  margin-right: -4vw; }
+  .g-four-up > * {
+    margin-bottom: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 100%; }
+    @media (min-width: 35em) {
+      .g-four-up > * {
+        width: 50%; } }
+    @media (min-width: 59em) {
+      .g-four-up > * {
+        width: 25%; } }
 
 .g-center {
   -ms-flex-align: center;

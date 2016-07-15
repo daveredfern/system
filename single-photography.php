@@ -8,27 +8,20 @@
 		$width = $image[1];
 		$unsplash = get_field('unsplash_link');
 	?>
-	<div class="u-section">
-		<div class="u-container u-container--lg">
-			<h1><?php the_title(); ?></h1>
-		</div>
+	<div class="u-container u-container--lg u-section">
+		<h1><?php the_title(); ?></h1>
 		<?php if(has_post_thumbnail()) : ?>
-			<img class="u-full"
-				 src="<?php the_post_thumbnail_url('photography-xs'); ?>"
-				 srcset="<?php the_post_thumbnail_url('photography-xl'); ?> 1500w,
-						 <?php the_post_thumbnail_url('photography-lg'); ?> 1200w,
-						 <?php the_post_thumbnail_url('photography-md'); ?> 800w,
-						 <?php the_post_thumbnail_url('photography-sm'); ?> 600w,
-						 <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
-				 sizes="86vw"
-				 alt="<?php the_title(); ?>" />
+				<img class="u-full"
+					 src="<?php the_post_thumbnail_url('photography-xs'); ?>"
+					 srcset="<?php the_post_thumbnail_url('photography-xl'); ?> 1500w,
+							 <?php the_post_thumbnail_url('photography-lg'); ?> 1200w,
+							 <?php the_post_thumbnail_url('photography-md'); ?> 800w,
+							 <?php the_post_thumbnail_url('photography-sm'); ?> 600w,
+							 <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
+					 sizes="86vw"
+					 alt="<?php the_title(); ?>" />
 		<?php endif; ?>
-	</div>
-	
-	<div class="u-container u-section">
 		<?php the_content(); ?>
-	</div>
-	<div class="u-container u-section">
 		<ul>
 			<?php if($unsplash) : ?>
 				<li><a href="<?php echo $unsplash; ?>">Download full resolution photo on Unsplash</a></li>
