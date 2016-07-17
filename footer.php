@@ -13,7 +13,7 @@
 				<a href="https://uk.linkedin.com/in/daveredfern">LinkedIn</a></p>
 		</div>
 		<div>
-			<p><strong>Open source projects</strong><br />
+			<p><strong>Open source</strong><br />
 				<a href="https://github.com/daveredfern">Github</a></p>
 		</div>
 		<div>
