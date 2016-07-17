@@ -1,15 +1,1 @@
-.home {
-  color: #340f3a; }
-  .home blockquote {
-    border-left-color: #340f3a; }
-  .home a, .home .lead, .home h1, .home h2, .home h3, .home .h1, .home .h2, .home .h3 {
-    color: #340f3a; }
-  .home hr {
-    border-bottom-color: #340f3a; }
-  .home .logo-icon {
-    background-color: #340f3a; }
-
-.home {
-  background: #4cf5a6; }
-  .home .logo-icon:after {
-    border-bottom-color: #4cf5a6; }
+.home{color:#340f3a}.home blockquote{border-left-color:#340f3a}.home .h1,.home .h2,.home .h3,.home .lead,.home a,.home h1,.home h2,.home h3{color:#340f3a}.home hr{border-bottom-color:#340f3a}.home .logo-icon{background-color:#340f3a}.home{background:#4cf5a6}.home .logo-icon:after{border-bottom-color:#4cf5a6}
