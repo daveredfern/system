@@ -4,7 +4,7 @@
     <div class="u-container u-container--lg">
         <h1>Writing</h1>
     </div>
-    <div class="g-two-up g-limit g-gutter-y">
+    <div class="g-two-up g-limit g-gutter-y g-gutter-x-lg">
         <?php
             $args = array (
                 'showposts' => -1

@@ -2,7 +2,7 @@
 		<hr />
 	</div>
 
-	<div class="g-four-up g-limit">
+	<div class="g-four-up g-limit g-gutter-x-lg">
 		<div>
 			<p><strong>Get in touch</strong><br />
 				<a href="mailto:dave@daveredfern.com">dave@daveredfern.com</a></p>

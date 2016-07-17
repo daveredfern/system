@@ -34,6 +34,11 @@
 				echo file_get_contents(get_template_directory() . '/build/css/photography.css');
 			}
 		?>
+		<?php
+			if( is_post_type_archive('projects') || is_singular('projects') ) {
+				echo file_get_contents(get_template_directory() . '/build/css/projects.css');
+			}
+		?>
 	</style>
 
 	<?php wp_head(); ?>
