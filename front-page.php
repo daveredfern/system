@@ -35,11 +35,11 @@
 		</ul>
 	</div>
 	<div>
-		<h2>Featured projects</h2>
+		<h2>Talks</h2>
 		<ul class="u-list-space">
 	    <?php
             $args = array(
-				'post_type' => 'projects',
+				'post_type' => 'talk',
                 'posts_per_page' => 5
             );
 	        $projects = new WP_Query( $args );
