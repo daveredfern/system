@@ -11,9 +11,6 @@
 	</div>
 <?php endif; ?>
 <div class="u-container u-container--lg u-section">
-	<hr />
-</div>
-<div class="u-container u-container--lg u-section">
 	<h2>Recent articles</h2>
 	<ul class="u-list-space">
 	<?php
