@@ -26,7 +26,7 @@
 		while( $latestarticles->have_posts() ) {
 			$latestarticles->the_post();
 		?>
-			<li><strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong> &mdash; <?php the_time('M S'); ?></li>
+			<li><strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong> &mdash; <?php the_time('M j'); ?></li>
 		<?php
 		}
 		wp_reset_query();
