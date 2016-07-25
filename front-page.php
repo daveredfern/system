@@ -13,47 +13,25 @@
 <div class="u-container u-container--lg u-section">
 	<hr />
 </div>
-<div class="g-two-up g-limit g-gutter-y g-gutter-x-lg">
-	<div>
-		<h2>Recent articles</h2>
-		<ul class="u-list-space">
-	    <?php
-            $args = array(
-				'post_type' => 'post',
-                'posts_per_page' => 5
-            );
-	        $latestarticles = new WP_Query( $args );
+<div class="u-container u-container--lg u-section">
+	<h2>Recent articles</h2>
+	<ul class="u-list-space">
+	<?php
+		$args = array(
+			'post_type' => 'post',
+			'posts_per_page' => 5
+		);
+		$latestarticles = new WP_Query( $args );
 
-	        while( $latestarticles->have_posts() ) {
-	            $latestarticles->the_post();
-	        ?>
-	        	<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-	        <?php
-	        }
-	        wp_reset_query();
-	    ?>
-		</ul>
-	</div>
-	<div>
-		<h2>Talks</h2>
-		<ul class="u-list-space">
-	    <?php
-            $args = array(
-				'post_type' => 'talk',
-                'posts_per_page' => 5
-            );
-	        $projects = new WP_Query( $args );
-
-	        while( $projects->have_posts() ) {
-	            $projects->the_post();
-	        ?>
-	        	<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-	        <?php
-	        }
-	        wp_reset_query();
-	    ?>
-		</ul>
-	</div>
+		while( $latestarticles->have_posts() ) {
+			$latestarticles->the_post();
+		?>
+			<li><strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong> &mdash; <?php the_time('M S'); ?></li>
+		<?php
+		}
+		wp_reset_query();
+	?>
+	</ul>
 </div>
 
 <?php get_footer(); ?>

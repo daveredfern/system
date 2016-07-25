@@ -7,6 +7,12 @@
     "type": "git",
     "url": "git@gitlab.iweb.co.uk:labs/chopchop.git"
   },
+  "scripts": {
+    "watch": "gulp",
+    "watch-dev": "gulp --dev",
+    "build": "gulp build",
+    "build-production": "gulp build --production"
+  },
   "keywords": [
     "npm",
     "gulp",
@@ -16,7 +22,7 @@
     "img",
     "fonts"
   ],
-  "author": "iWeb http://www.iweb.co.uk",
+  "author": "iWeb https://daveredfern.com",
   "license": "MIT",
   "bugs": {
     "url": "https://gitlab.iweb.co.uk/labs/chopchop/issues"
