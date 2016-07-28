@@ -4,7 +4,7 @@
     <div class="u-container u-container--lg">
         <h1>Writing</h1>
     </div>
-    <div class="g-two-up g-limit g-gutter-y g-gutter-x-lg">
+    <div class="u-container u-container--lg">
         <?php
             $args = array (
                 'showposts' => -1
@@ -16,14 +16,14 @@
             // Logic to display year once
             if (isset($curYear)) {
                 if ($curYear > get_the_time('Y')) :
-                    echo '</ul></div><div><h2>' . get_the_time('Y') . '</h2><ul class="u-list-space">';
+                    echo '</ul><h2>' . get_the_time('Y') . '</h2><ul class="u-list-space">';
               endif;
             } else {
-                echo '<div><h2>' . get_the_time('Y') . '</h2><ul class="u-list-space">';
+                echo '<h2>' . get_the_time('Y') . '</h2><ul class="u-list-space">';
             }
             $curYear = get_the_time('Y');
           ?>
-          <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> &mdash; <?php the_time('M j'); ?></li>
       <?php endwhile; wp_reset_query(); ?>
           </ul>
       </div>
