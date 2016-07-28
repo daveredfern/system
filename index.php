@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
-    <div class="u-container u-container--lg">
+    <div class="u-container u-container--lg u-section">
         <h1>Writing</h1>
-    </div>
-    <div class="u-container u-container--lg">
         <?php
             $args = array (
                 'showposts' => -1
