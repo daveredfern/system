@@ -2,69 +2,39 @@
 // Heading
 // =============================================
 
-h1, h2, h3,
-.h1, .h2, .h3 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
     color: $dark-grey;
     margin-bottom: 0.6em;
     margin-top: 0;
     line-height: $heading-line-height;
 }
 
-* + h1, * + h2, * + h3,
-* + .h1, * + .h2, * + .h3 {
-    margin-top: 1.618em;
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
+* + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
+    margin-top: 1.33em;
 }
 
 
-h1, .h1 {
-    font-size: $h1-font-size; // 2em
-    font-weight: 900;
+$start-min: map-get($start,min);
+$start-max: map-get($start,min);
 
-    @media(min-width: $screen-sm) {
-        font-size: $h1-font-size * 1.25; // 2.5em
-    }
+@each $h in h6, h5, h4, h3, h2, h1 {
+	#{$h}, %#{$h}, .#{$h} {
+        @if $h == h1 {
+            font-weight: 900;
+        }
+		font-size: $start-min;
 
-    @media(min-width: $screen-md) {
-        font-size: $h1-font-size * 1.35; // 2.7em
-    }
+        @media(min-width: map-get($range,min)) {
+			font-size: calc(#{$start-min} + #{strip-unit($start-max - $start-min)} * ((100vw - #{map-get($range,min)}) / #{strip-unit(map-get($range,max) - map-get($range,min))}));
+		}
 
-    @media(min-width: $screen-lg) {
-        font-size: $h1-font-size * 1.5; // 3em
-    }
-}
+        @media(min-width: map-get($range,max)) {
+			font-size: $start-max;
+		}
+	}
 
-h2, .h2 {
-    font-size: $h2-font-size; // 1.5em
-
-    @media(min-width: $screen-md) {
-        font-size: $h2-font-size * 1.1; // 1.65em
-    }
-
-    @media(min-width: $screen-lg) {
-        font-size: $h2-font-size * 1.2; // 1.8em
-    }
-}
-
-h3, .h3 {
-    font-size: $h3-font-size; // 1.2em
-
-    @media(min-width: $screen-md) {
-        font-size: $h3-font-size * 1.1;  // 1.32em
-    }
-
-    @media(min-width: $screen-lg) {
-        font-size: $h2-font-size; // 1.44em
-    }
-}
-
-h4, .h4 {
-    font-size: $h4-font-size; // 1em
-
-    @media(min-width: $screen-md) {
-        font-size: $h4-font-size * 1.1; // 1.1em
-    }
-
-    @media(min-width: $screen-lg) {
-        font-size: $h4-font-size * 1.2; // 1.2em
-    }
+    $start-max: $start-max * map-get($typescale,max);
+	$start-min: $start-min * map-get($typescale,min);
 }

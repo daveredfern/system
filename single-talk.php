@@ -13,7 +13,7 @@
 	</div>
 	<div class="u-container u-section">
 		<h2>Other talks</h2>
-		<ul class="u-list-space">
+		<ul class="u-list-unstyled">
 	    <?php
 		$thisPostID = get_the_ID();
             $args=array(

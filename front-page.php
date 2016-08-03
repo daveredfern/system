@@ -12,7 +12,7 @@
 <?php endif; ?>
 <div class="u-container u-container--lg u-section">
 	<h2>Recent articles</h2>
-	<ul class="u-list-space">
+	<ul class="u-list-unstyled">
 	<?php
 		$args = array(
 			'post_type' => 'post',

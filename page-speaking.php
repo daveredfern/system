@@ -50,7 +50,7 @@ Template Name: Speaking
 		</div>
 		<div>
 			<h2>Talks</h2>
-			<ul class="u-list-space">
+			<ul class="u-list-unstyled">
 			<?php
 				$args = array(
 					'post_type' => 'talk',

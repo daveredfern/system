@@ -29,8 +29,7 @@
 // List unstyled
 // =============================================
 
-%u-list-unstyled,
-.u-list-unstyled {
+[class*="u-list-"] {
     padding-left: 0;
     list-style: none;
 }
@@ -42,23 +41,11 @@
 
 %u-list-inline,
 .u-list-inline {
-    @extend %u-list-unstyled;
-
     > * {
         display: inline-block;
         margin-right: 1em;
         margin-bottom: 0;
     }
-}
-
-
-// =============================================
-// List inline
-// =============================================
-
-%u-list-space,
-.u-list-space {
-    @extend %u-list-unstyled;
 }
 
 

@@ -6,7 +6,7 @@
 		    the_archive_title( '<h1>', '</h1>' );
 		    the_archive_description();
 	    ?>
-        <ul class="u-list-space">
+        <ul class="u-list-unstyled">
         <?php while ( have_posts() ) : the_post(); ?>
 		    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
         <?php endwhile; ?>

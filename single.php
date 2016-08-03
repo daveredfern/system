@@ -8,7 +8,7 @@
 	</div>
 	<div class="u-container u-section">
 		<h2>Related articles</h2>
-		<ul class="u-list-space">
+		<ul class="u-list-unstyled">
 	    <?php
             $$orig_post = $post;
 	        global $post;
