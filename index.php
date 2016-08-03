@@ -21,7 +21,7 @@
             }
             $curYear = get_the_time('Y');
           ?>
-			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> &mdash; <?php the_time('M j'); ?></li>
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="micro">&mdash; <?php the_time('M j'); ?></span></li>
       <?php endwhile; wp_reset_query(); ?>
           </ul>
     </div>

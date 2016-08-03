@@ -45,7 +45,7 @@
 	?>
 	    <div class="u-section">
 	        <h2>Choose another photo</h2>
-	        <p class="h3">
+	        <p class="h3 u-reset-type">
 				<?php
 					while ( $related->have_posts() ) : $related->the_post();
 				?>

@@ -48,7 +48,7 @@
 
     <header class="u-section">
         <div class="logo">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="logo-icon"></i><span> <?php bloginfo( 'name' ); ?></span></a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="no-style"><i class="logo-icon"></i><span> <?php bloginfo( 'name' ); ?></span></a>
         </div>
 
         <nav class="nav">

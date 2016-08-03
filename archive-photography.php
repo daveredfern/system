@@ -21,7 +21,7 @@
                 <?php if($height > $width) : ?>
                     <div class="u-portait">
                 <?php endif; ?>
-                    <a href="<?php the_permalink(); ?>" class="u-ratio" style="padding-top: <?php echo $ratio; ?>%;<?php if($color) { echo ' background-color:' . $color[0] . ';'; } ?>">
+                    <a href="<?php the_permalink(); ?>" class="u-ratio no-style" style="padding-top: <?php echo $ratio; ?>%;<?php if($color) { echo ' background-color:' . $color[0] . ';'; } ?>">
                         <?php if ( has_post_thumbnail() ) : ?>
                             <img class="u-full"
                                  src="<?php the_post_thumbnail_url('photography-xs'); ?>"
