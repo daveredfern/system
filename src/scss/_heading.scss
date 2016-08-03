@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6,
 
 
 $start-min: map-get($start,min);
-$start-max: map-get($start,min);
+$start-max: map-get($start,max);
 
 @each $h in h6, h5, h4, h3, h2, h1 {
 	#{$h}, %#{$h}, .#{$h} {
@@ -35,6 +35,6 @@ $start-max: map-get($start,min);
 		}
 	}
 
-    $start-max: $start-max * map-get($typescale,max);
 	$start-min: $start-min * map-get($typescale,min);
+    $start-max: $start-max * map-get($typescale,max);
 }
