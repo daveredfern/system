@@ -15,9 +15,9 @@ html {
         font-size: 120%;
     }
 
-    // @media(min-width: $screen-xl) {
-    //     font-size: 130%;
-    // }
+    @media(min-width: $screen-xl) {
+        font-size: 130%;
+    }
 }
 
 ::selection {

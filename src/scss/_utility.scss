@@ -9,7 +9,7 @@
         max-width: $screen-md - 6em;
     }
 
-    @media(min-width: $screen-md) {
+    @media(min-width: $screen-sm) {
         width: 90%;
     }
 }

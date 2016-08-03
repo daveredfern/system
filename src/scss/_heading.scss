@@ -27,11 +27,11 @@ $start-max: map-get($start,max);
 		font-size: $start-min;
 
         @media(min-width: map-get($range,min)) {
-			font-size: calc(#{$start-min} + #{strip-unit($start-max - $start-min)} * ((100vw - #{map-get($range,min)}) / #{strip-unit(map-get($range,max) - map-get($range,min))}));
+			font-size: calc(#{$start-min} + #{strip-unit($start-max - $start-min)} * ((110vw - #{map-get($range,min)}) / #{strip-unit(map-get($range,max) - map-get($range,min))}));
 		}
 
         @media(min-width: map-get($range,max)) {
-			font-size: $start-max;
+			font-size: $start-max*0.9;
 		}
 	}
 
