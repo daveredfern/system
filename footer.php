@@ -9,7 +9,7 @@
 		</div>
 		<div>
 			<p><strong>Follow me online</strong><br />
-				<a href="https://www.twitter.com/daveredfern">@daveredfern</a><br />
+				<a href="https://www.twitter.com/daveredfern">Twitter</a><br />
 				<a href="https://uk.linkedin.com/in/daveredfern">LinkedIn</a></p>
 		</div>
 		<div>
