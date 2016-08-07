@@ -6,7 +6,7 @@
 		<?php the_content(); ?>
 	</div>
 	<div class="u-container u-section">
-		<p class="micro">Posted on <?php echo get_the_time('jS F Y'); ?></p>
+		<p>Posted on <?php echo get_the_time('jS F Y'); ?></p>
 	</div>
 	<div class="u-container u-section">
 		<hr />

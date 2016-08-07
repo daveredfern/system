@@ -4,7 +4,7 @@
 	<div class="u-container u-section">
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
-		<p class="micro">Posted on <?php echo get_the_time('jS F Y'); ?></p>
+		<p>Posted on <?php echo get_the_time('jS F Y'); ?></p>
 	</div>
 	<div class="u-container u-section">
 		<h2>Related articles</h2>

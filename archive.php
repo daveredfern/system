@@ -8,7 +8,7 @@
 	    ?>
         <ul class="u-list-unstyled">
         <?php while ( have_posts() ) : the_post(); ?>
-		    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="micro">&mdash; <?php the_time('M j'); ?></span></li>
+		    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> &mdash; <?php the_time('M j'); ?></li>
         <?php endwhile; ?>
         </ul>
     </div>
