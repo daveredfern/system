@@ -27,7 +27,10 @@ html {
 
 body {
     padding: 7vw;
-    padding: 7vmax;
+
+    @media(min-width: $screen-sm) {
+        padding: 7vmax;
+    }
 }
 
 p, ul, ol {
