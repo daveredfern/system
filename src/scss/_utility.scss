@@ -68,7 +68,6 @@
     position: relative;
 	overflow: hidden;
     padding-top: 100%;
-    background-color: $dark-grey;
     display: block;
 
     > * {
@@ -85,6 +84,7 @@
 // Full width
 // =============================================
 
+%u-full,
 .u-full {
     width: 100%;
 }
