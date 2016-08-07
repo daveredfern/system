@@ -65,16 +65,15 @@ blockquote {
     margin-left: 0;
 
     > p {
+        @extend %h3;
+        font-weight: normal;
+        line-height: $base-line-height;
         font-family: $serif-font-family;
         font-style: italic;
     }
 
     @media(min-width: $screen-sm) {
         margin-left: calc(-1.618em - 3px);
-
-        > p {
-            font-size: $lg-font-size;
-        }
     }
 }
 
