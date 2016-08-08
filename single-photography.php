@@ -19,7 +19,8 @@
 							 <?php the_post_thumbnail_url('photography-sm'); ?> 600w,
 							 <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
 					 sizes="86vw"
-					 alt="<?php the_title(); ?>" />
+					 alt="<?php the_title(); ?>"
+					 title="<?php the_title(); ?>" />
 		<?php endif; ?>
 		<?php the_content(); ?>
 		<ul>

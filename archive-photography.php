@@ -5,7 +5,7 @@
         <h1><?php post_type_archive_title(); ?></h1>
         <p>All my photos are free to use, released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero license</a>. If you use a photo <a href="/contact">I'd love to know!</a></p>
     </div>
-    <div class="g-two-up g-center g-gutter-y g-gutter-x-lg">
+    <div class="g-two-up g-center g-gutter-y-xl g-gutter-x-lg">
         <?php while ( have_posts() ) : the_post(); ?>
             <div>
                 <?php
@@ -29,12 +29,14 @@
                                          <?php the_post_thumbnail_url('photography-sm'); ?> 600w,
                                          <?php the_post_thumbnail_url('photography-xs'); ?> 400w"
                                  sizes="(min-width: 35em) 41vw, 100vw"
-                                 alt="<?php the_title(); ?>" />
+                                 alt="<?php the_title(); ?>"
+                                 title="<?php the_title(); ?>" />
                         <?php endif; ?>
                     </a>
                 <?php if($height > $width) : ?>
                     </div>
                 <?php endif; ?>
+                <p class="h3 u-reset-type"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
             </div>
         <?php endwhile; ?>
     </div>

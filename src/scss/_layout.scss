@@ -66,7 +66,13 @@
 // =============================================
 
 .g-gutter-y > * {
-    margin-bottom: 8vw;
+    margin-bottom: 7vw;
+    margin-bottom: 7vmax;
+}
+
+.g-gutter-y-xl > * {
+    margin-bottom: 14vw;
+    margin-bottom: 14vmax;
 }
 
 .g-gutter-x {

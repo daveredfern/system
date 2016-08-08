@@ -6,13 +6,12 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     color: $dark-grey;
     margin-bottom: 0.6em;
-    margin-top: 0;
     line-height: $heading-line-height;
 }
 
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
-    margin-top: 1.33em;
+    @extend %top-margin;
 }
 
 
