@@ -106,3 +106,13 @@ function fb_add_body_class( $class ) {
 	return $class;
 }
 add_filter( 'body_class', 'fb_add_body_class' );
+
+
+// =============================================
+// SEO default image
+// =============================================
+
+add_filter( 'the_seo_framework_og_image_after_featured', 'my_after_featured_image_url' );
+function my_after_featured_image_url() {
+	return get_template_directory_uri() . '/build/default/default.jpg';
+}
