@@ -13,6 +13,7 @@ add_theme_support( 'title-tag' );
 
 add_theme_support( 'post-thumbnails' );
 
+add_image_size( 'photography-pixel', 10, 20, false);
 add_image_size( 'photography-xs', 400, 600, false);
 add_image_size( 'photography-sm', 600, 900, false);
 add_image_size( 'photography-md', 800, 1200, false);

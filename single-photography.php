@@ -8,7 +8,7 @@
 		$width = $image[1];
 		$unsplash = get_field('unsplash_link');
 	?>
-	<div class="u-container u-container--lg u-section">
+	<div class="u-section">
 		<h1><?php the_title(); ?></h1>
 		<?php if(has_post_thumbnail()) : ?>
 				<img class="u-full"
@@ -46,7 +46,7 @@
 	?>
 	    <div class="u-section">
 	        <h2>Choose another photo</h2>
-	        <p class="h3 u-reset-type">
+	        <p class="h3">
 				<?php
 					while ( $related->have_posts() ) : $related->the_post();
 				?>

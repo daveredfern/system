@@ -23,6 +23,11 @@
 %u-section {
     margin-bottom: 7vw;
     margin-bottom: 7vmax;
+
+    &-lg {
+        margin-bottom: 18vw;
+        margin-bottom: 18vmax;
+    }
 }
 
 
@@ -51,15 +56,6 @@
 
 
 // =============================================
-// Reset type
-// =============================================
-
-.u-reset-type {
-    line-height: $base-line-height;
-}
-
-
-// =============================================
 // Ratio
 // =============================================
 
@@ -68,13 +64,13 @@
 	overflow: hidden;
     padding-top: 100%;
     display: block;
+    background-size: cover;
 
     > * {
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
+        height: 100%;
     }
 }
 
@@ -93,8 +89,24 @@
 // Portrait photo
 // =============================================
 
+%u-portrait,
 .u-portait {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+// =============================================
+// Full width
+// =============================================
+
+%u-hide,
+.u-hide {
+    opacity: 0;
+    transition: all .6s;
+}
+
+.lazyloaded {
+    opacity: 1;
 }

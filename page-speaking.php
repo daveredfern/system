@@ -35,7 +35,7 @@ Template Name: Speaking
 					if($date < date('Ymd') && $pasteventTitle === 0) :
 						if($upcomingTitle === 0) :
 							echo '<h2>Upcoming events</h2><p>No upcoming events.</p>';
-							echo '</div><div class="g-two-up g-limit g-gutter-y g-gutter-x-lg"><div><h2>Past events</h2>';
+							echo '</div><div class="grid g-two-up g-limit g-gutter-x"><div><div class="u-section"><h2>Past events</h2>';
 						endif;
 						$pasteventTitle = 1;
 					endif;
@@ -47,6 +47,7 @@ Template Name: Speaking
 			endwhile; endif;
 	        wp_reset_query();
 	    ?>
+			</div>
 		</div>
 		<div>
 			<h2>Talks</h2>
