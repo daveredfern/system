@@ -7,17 +7,6 @@
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-	<title>
-		<?php
-		   if (is_archive() && !is_front_page()) {  wp_title(''); echo (' - '); bloginfo('name'); }
-		   elseif (is_search()) { echo 'Search results for "'.wp_specialchars($s).'"'; echo (' - '); bloginfo('name'); }
-		   elseif ( is_front_page() ) { bloginfo('description'); echo (' - '); bloginfo('name'); }
-		   elseif ( !(is_404()) && (is_single()) || (is_page())) { the_title(); echo (' - '); bloginfo('name'); }
-		   elseif (is_404()) { echo 'Error 404'; }
-		   if (is_home()) { echo ('Articles - '); bloginfo('name'); }
-		   if ($paged>1) { echo ' - pàgina '. $paged; }
-		?>
-	</title>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
