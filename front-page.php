@@ -13,21 +13,21 @@
 <div class="u-container u-container--lg u-section">
 	<h2>Recent articles</h2>
 	<ul class="u-list-unstyled">
-	<?php
-		$args = array(
-			'post_type' => 'post',
-			'posts_per_page' => 5
-		);
-		$latestarticles = new WP_Query( $args );
-
-		while( $latestarticles->have_posts() ) {
-			$latestarticles->the_post();
-		?>
-			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> &mdash; <?php the_time('M j'); ?></li>
 		<?php
-		}
-		wp_reset_query();
-	?>
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 5
+			);
+			$latestarticles = new WP_Query( $args );
+
+			while( $latestarticles->have_posts() ) {
+				$latestarticles->the_post();
+			?>
+				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> &mdash; <?php the_time('M j'); ?></li>
+			<?php
+			}
+			wp_reset_query();
+		?>
 	</ul>
 </div>
 

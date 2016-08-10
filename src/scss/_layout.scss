@@ -67,3 +67,14 @@
         padding-right: 4vw;
     }
 }
+
+.g-gutter {
+    margin-left: -2vw;
+    margin-right: -2vw;
+
+    > * {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-bottom: 4vw;
+    }
+}
