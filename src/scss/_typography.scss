@@ -7,7 +7,6 @@ html {
     line-height: $base-line-height;
     color: $grey;
     background-color: $light-grey;
-    -webkit-text-size-adjust: 100%;
     font-size: 110%;
 
 
@@ -26,6 +25,7 @@ html {
 }
 
 body {
+    -webkit-text-size-adjust: 100%;
     padding: 7vw;
 
     @media(min-width: $screen-md) {
