@@ -4,16 +4,17 @@
 
 	<div class="grid g-four-up g-limit g-gutter-x">
 		<div>
-			<p><strong>Send an email</strong><br />
+			<p><strong>Current focus</strong><br />
+				 My <a href="<?php echo get_permalink(285); ?>">now page</a> shows what I am currently focusing on.</p>
+		</div>
+		<div>
+			<p><strong>Send me an email</strong><br />
 				<a href="mailto:dave@daveredfern.com">dave@daveredfern.com</a></p>
 		</div>
 		<div>
 			<p><strong>Follow me online</strong><br />
 				<a href="https://www.twitter.com/daveredfern">Twitter</a><br />
-				<a href="https://uk.linkedin.com/in/daveredfern">LinkedIn</a></p>
-		</div>
-		<div>
-			<p><strong>Open source</strong><br />
+				<a href="https://uk.linkedin.com/in/daveredfern">LinkedIn</a><br />
 				<a href="https://github.com/daveredfern">Github</a></p>
 		</div>
 		<div>

@@ -5,7 +5,7 @@
         <h1><?php post_type_archive_title(); ?></h1>
         <p>All my photos are free to use, released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero license</a>. If you use a photo <a href="/contact">I'd love to know!</a></p>
     </div>
-    <div class="grid g-two-up g-center g-gutter-x">
+    <div class="grid g-two-up g-center g-gutter">
         <?php
             $i = 0;
             while ( have_posts() ) : the_post(); ?>
@@ -23,6 +23,8 @@
                     ?>
                     <?php if($height > $width) : ?>
                         <div class="u-portait">
+                    <?php else: ?>
+                        <div class="u-landscape">
                     <?php endif; ?>
                         <a href="<?php the_permalink(); ?>" class="u-ratio no-style" style="padding-top: <?php echo $ratio; ?>%;<?php if($color) { echo ' background-color:' . $color[0] . ';'; } ?> background-image: url(<?php the_post_thumbnail_url('photography-pixel'); ?>);">
                             <?php if ( has_post_thumbnail() ) : ?>
@@ -48,9 +50,7 @@
                                 <?php endif; ?>
                             <?php endif; ?>
                         </a>
-                    <?php if($height > $width) : ?>
-                        </div>
-                    <?php endif; ?>
+                    </div>
                     <p class="h3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                 </div>
             </div>

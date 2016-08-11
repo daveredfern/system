@@ -58,23 +58,20 @@
 // Gutter
 // =============================================
 
+%g-gutter-x,
 .g-gutter-x {
-    margin-left: -4vw;
-    margin-right: -4vw;
-
-    > * {
-        padding-left: 4vw;
-        padding-right: 4vw;
-    }
-}
-
-.g-gutter {
-    margin-left: -2vw;
     margin-right: -2vw;
 
     > * {
         padding-left: 2vw;
         padding-right: 2vw;
+    }
+}
+
+.g-gutter {
+    @extend %g-gutter-x;
+
+    > * {
         margin-bottom: 4vw;
     }
 }
