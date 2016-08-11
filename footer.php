@@ -5,7 +5,7 @@
 	<div class="grid g-four-up g-limit g-gutter-x">
 		<div>
 			<p><strong>Current focuses</strong><br />
-				 My <a href="<?php echo get_permalink(285); ?>">now page</a> shows what I am currently focusing on.</p>
+				 My <a href="<?php echo get_permalink(285); ?>">now page</a> shows what I am focussing my efforts on.</p>
 		</div>
 		<div>
 			<p><strong>Send me an email</strong><br />
