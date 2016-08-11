@@ -12,55 +12,65 @@
 // =============================================
 
 .logo {
-    margin-bottom: 0.8em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: $dark-grey;
 
-    a {
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        color: $dark-grey;
-
-        &:hover,
-        &:hover span,
-        &:focus,
-        &:focus span {
-            opacity: 1;
-        }
-
-        &:focus .logo-icon {
-            background-color: $white;
-
-            &:after {
-                border-bottom-color: $blue;
-            }
-        }
-    }
     span {
         opacity: 0;
-        display: inline-block;
-        margin-left: 0.5em;
+        margin-left: 1em;
         transition: opacity .3s;
+    }
+
+    &:hover span,
+    &:focus span {
+        opacity: 1;
     }
 }
 
+
 .logo-icon {
     display: block;
-    height: 1.7em;
-    width: 1.7em;
-    background-color: $dark-grey;
-    border-radius: $border-radius;
+    height: 1.8em;
+    width: 1.8em;
+    border: 0.6em solid $dark-grey;
     position: relative;
+    animation: spin .6s 1;
+    transition: transform .3s;
 
-    &:after {
+    &:after,
+    &:before {
+        display: block;
         content: "";
         position: absolute;
-        bottom: 0.3em;
-        right: 0.3em;
-        display: block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 0 0.5em 1em;
-        border-color: transparent transparent $light-grey transparent;
+        height: 0.7em;
+        width: 0.7em;
+        background-color: $light-grey;
+    }
+
+    &:before {
+        top: -.7em;
+        right: -.7em;
+    }
+
+    &:after {
+        bottom: -.7em;
+        left: -.7em;
+    }
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(-45deg);
+}
+
+@keyframes spin {
+    0%,50% {
+        opacity: 0;
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
     }
 }

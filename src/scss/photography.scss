@@ -13,12 +13,4 @@
 .photography {
     background-color: $dark-grey;
     @extend %t-color-white;
-
-    .logo-icon {
-        background-color: $light-grey;
-
-        &:after {
-            border-bottom-color: $dark-grey;
-        }
-    }
 }

@@ -115,7 +115,7 @@ iframe {
 // Links
 // =============================================
 
-a,
+a:not(.logo),
 %link {
     color: $blue;
     touch-action: manipulation;

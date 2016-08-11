@@ -23,6 +23,15 @@
     hr {
         border-bottom-color: $light-grey;
     }
+
+    .logo-icon {
+        border-color: $green;
+
+        &:after,
+        &:before {
+            background: $dark-grey;
+        }
+    }
 }
 
 
@@ -49,6 +58,11 @@
     }
 
     .logo-icon {
-        background-color: $purple;
+        border-color: $purple;
+
+        &:after,
+        &:before {
+            background: $green;
+        }
     }
 }

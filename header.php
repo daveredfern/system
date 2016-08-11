@@ -43,10 +43,7 @@
 <body>
 
     <header class="u-section">
-        <div class="logo">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="no-style"><i class="logo-icon"></i><span> <?php bloginfo( 'name' ); ?></span></a>
-        </div>
-
+        <p><a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="no-style"><i class="logo-icon"></i><span> <?php bloginfo( 'name' ); ?></span></a></p>
         <nav class="nav">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'u-list-inline', 'container' => '', 'menu_id' => '' ) ); ?>
         </nav>
