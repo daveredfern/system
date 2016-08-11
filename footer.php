@@ -4,7 +4,7 @@
 
 	<div class="grid g-four-up g-limit g-gutter-x">
 		<div>
-			<p><strong>Current focus</strong><br />
+			<p><strong>Current focuses</strong><br />
 				 My <a href="<?php echo get_permalink(285); ?>">now page</a> shows what I am currently focusing on.</p>
 		</div>
 		<div>
