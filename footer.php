@@ -1,7 +1,7 @@
 
 	<div class="u-container u-section">
 		<h2>Notes to your inbox</h2>
-		<p>Occasional, short emails to your inbox. Nothing fancy, just quick links to new content.</p>
+		<p>Occasional, short emails to your inbox. Nothing fancy, just links to new articles and content.</p>
 		<form action="https://tinyletter.com/daveredfern" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/daveredfern', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
 			<label for="tlemail">Enter your email address</label>
 			<input type="hidden" value="1" name="embed"/>
