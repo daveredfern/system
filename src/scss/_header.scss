@@ -37,7 +37,7 @@
     border: 0.6em solid $dark-grey;
     position: relative;
     animation: spin .6s 1;
-    transition: transform .3s;
+    transition: transform .3s, border-color .3s;
 
     &:after,
     &:before {

@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M95,0H5A5,5,0,0,0,0,5V95a5,5,0,0,0,5,5H95a5,5,0,0,0,5-5V5A5,5,0,0,0,95,0ZM80,77a3,3,0,0,1-3,3H20L80,50V77Z" transform="translate(0 0)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="489px" height="489px" viewBox="0 0 489 489" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill="#111111">
+            <path d="M0,0 L163,0 L163,163 L0,163 L0,0 Z M163,0 L326,0 L326,163 L163,163 L163,0 Z M0,163 L163,163 L163,326 L0,326 L0,163 Z" id="Combined-Shape"></path>
+            <path d="M163,163 L326,163 L326,326 L163,326 L163,163 Z M326,163 L489,163 L489,326 L326,326 L326,163 Z M163,326 L326,326 L326,489 L163,489 L163,326 Z" id="Combined-Shape-Copy" transform="translate(326.000000, 326.000000) rotate(-180.000000) translate(-326.000000, -326.000000) "></path>
+        </g>
+    </g>
+</svg>
