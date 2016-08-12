@@ -9,7 +9,6 @@ Template Name: Newsletter
 	<div class="u-container u-section">
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
-        <p>Be notified when I post something new. Occasional, short emails. Nothing fancy, just links to new articles and content.</p>
         <form action="https://tinyletter.com/daveredfern" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/daveredfern', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
             <label for="tlemail">Enter your email address</label>
             <input type="hidden" value="1" name="embed"/>

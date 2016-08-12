@@ -1,5 +1,5 @@
 
-	<?php if(!is_page(846)) : ?>
+	<?php if(!is_page_template('page-newsletter.php')) : ?>
 		<div class="u-container u-section">
 			<h2>Notes to your inbox</h2>	
 			<p>Be notified when I post something new. Occasional, short emails. Nothing fancy, just links to new articles and content.</p>
