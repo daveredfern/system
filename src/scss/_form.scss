@@ -2,13 +2,16 @@
 // Input
 // =============================================
 
-input {
+input,
+button {
     font-size: 100%;
     padding: 0.5em 1em;
     border: 2px solid $light-grey;
     border-right: 0;
     background-color: $white;
     width: 100%;
+    border-radius: 0;
+    appearance: none;
 
     &:focus {
         border-color: $blue;
@@ -27,6 +30,10 @@ input {
     color: $lighter-grey;
     border: transparent;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
 
     &:hover {
         background-color: darken($blue,15%);

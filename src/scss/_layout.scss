@@ -85,6 +85,10 @@
 .flag {
     display: flex;
 
+    > *:first-child {
+        flex-grow: 1;
+    }
+
     > *:last-child {
         flex-shrink: 1;
     }
