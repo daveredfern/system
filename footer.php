@@ -1,3 +1,19 @@
+
+	<div class="u-container u-section">
+		<h2>Notes to your inbox</h2>
+		<p>Occasional, short emails to your inbox. Nothing fancy, just quick links to new content.</p>
+		<form action="https://tinyletter.com/daveredfern" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/daveredfern', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+			<label for="tlemail">Enter your email address</label>
+			<input type="hidden" value="1" name="embed"/>
+			<div class="flag">
+				<input type="text" name="email" id="tlemail" />
+				<input class="btn"type="submit" value="Subscribe" />
+			</div>
+		</form>
+		<p class="micro">I respect your inbox. No spam. Unsubscribe with just a click.</p>
+	</div>
+
+
 	<div class="u-container u-container--lg u-section">
 		<hr />
 	</div>

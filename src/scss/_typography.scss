@@ -2,11 +2,14 @@
 // Typography
 // =============================================
 
-html {
+html, input {
     font-family: $base-font-family;
     line-height: $base-line-height;
     color: $grey;
-    background-color: $light-grey;
+}
+
+html {
+    background-color: $lighter-grey;
     -webkit-text-size-adjust: 100%;
     font-size: 110%;
 
@@ -22,7 +25,7 @@ html {
 
 ::selection {
     background-color: $blue;
-    color: $light-grey;
+    color: $lighter-grey;
 }
 
 body {
@@ -128,7 +131,7 @@ a:not(.logo),
 
     &:focus {
         background-color: $blue;
-        color: $light-grey !important;
+        color: $lighter-grey !important;
         outline: 0.2em solid $blue;
         opacity: 1;
     }
@@ -136,4 +139,13 @@ a:not(.logo),
 
 a.no-style {
     box-shadow: none;
+}
+
+
+// =============================================
+// Micro
+// =============================================
+
+.micro {
+    font-size: 0.8em;
 }

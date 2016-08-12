@@ -3,10 +3,10 @@
 // =============================================
 
 %t-color-white {
-    color: $light-grey;
+    color: $lighter-grey;
 
     blockquote {
-        border-left-color: $light-grey;
+        border-left-color: $lighter-grey;
     }
 
     a {
@@ -17,11 +17,11 @@
     .h1, .h2, .h3,
     .lead,
     .logo a {
-        color: $light-grey;
+        color: $lighter-grey;
     }
 
     hr {
-        border-bottom-color: $light-grey;
+        border-bottom-color: $lighter-grey;
     }
 
     .logo-icon {

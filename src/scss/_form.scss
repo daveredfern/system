@@ -1,0 +1,44 @@
+// =============================================
+// Input
+// =============================================
+
+input {
+    font-size: 100%;
+    padding: 0.5em 1em;
+    border: 2px solid $light-grey;
+    border-right: 0;
+    background-color: $white;
+    width: 100%;
+
+    &:focus {
+        border-color: $blue;
+        outline: 0;
+    }
+}
+
+// =============================================
+// Input button
+// =============================================
+
+.btn {
+    width: auto;
+    font-weight: 700;
+    background-color: $blue;
+    color: $lighter-grey;
+    border: transparent;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($blue,15%);
+    }
+}
+
+
+// =============================================
+// Label
+// =============================================
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
