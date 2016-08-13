@@ -87,6 +87,7 @@
 
     > *:first-child {
         flex-grow: 1;
+        width: auto;
     }
 
     > *:last-child {
