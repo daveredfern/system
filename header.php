@@ -31,8 +31,8 @@
 			}
 		?>
 		<?php
-			if( is_post_type_archive('projects') || is_singular('projects') ) {
-				echo file_get_contents(get_template_directory() . '/build/css/projects.css');
+			if( is_page_template('page-projects.php') ) {
+				echo file_get_contents(get_template_directory() . '/build/css/project.css');
 			}
 		?>
 	</style>

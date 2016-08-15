@@ -36,7 +36,7 @@ button {
     white-space: nowrap;
 
     &:hover {
-        background-color: darken($blue,15%);
+        opacity: .6;
     }
 }
 

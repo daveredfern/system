@@ -1,0 +1,17 @@
+@import "variables";
+
+// =============================================
+// Project box
+// =============================================
+
+.color-box {
+    text-align: center;
+
+    * {
+        color: $white;
+    }
+
+    &__body {
+        width: 90%;
+    }
+}

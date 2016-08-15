@@ -21,6 +21,8 @@
 
 .u-section,
 %u-section {
+    margin-top: 7vw;
+    margin-top: 7vmax;
     margin-bottom: 7vw;
     margin-bottom: 7vmax;
 
@@ -89,7 +91,8 @@
 // Center
 // =============================================
 
-%u-center {
+%u-center,
+.u-center {
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,13 +104,11 @@
 
 %u-portrait,
 .u-portait {
-    @extend %u-center;
     width: 70%;
 }
 
 %u-landscape,
 .u-landscape {
-    @extend %u-center;
     width: 85%;
 }
 
@@ -124,4 +125,14 @@
 
 .lazyloaded {
     opacity: 1;
+}
+
+
+// =============================================
+// Clearfix
+// =============================================
+
+%u-clearfix,
+.u-clearfix {
+    overflow: hidden;
 }

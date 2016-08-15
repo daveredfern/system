@@ -29,21 +29,17 @@ html {
 }
 
 body {
-    padding: 7vw;
+    margin: 7vw;
 
     @media(min-width: $screen-md) {
-        padding: 7vmax;
+        margin: 7vmax;
     }
 }
 
-p, ul, ol {
+p, ul, ol, pre {
+    margin-top: 1.33em;
     margin-bottom: 1.618em;
 }
-
-pre {
-    margin-bottom: 2.4em;
-}
-
 
 ul, ol {
     padding-left: 1em;
@@ -55,12 +51,6 @@ ul, ol {
     > * {
         margin-bottom: 0.2em;
     }
-}
-
-
-%top-margin,
-* + p, * + ul, * + ol {
-    margin-top: 1.33em;
 }
 
 blockquote {
@@ -126,7 +116,7 @@ a:not(.logo),
     box-shadow: 0 0.06em 0 0 currentColor;
 
     &:hover {
-        opacity: 0.5;
+        opacity: 0.6;
     }
 
     &:focus {

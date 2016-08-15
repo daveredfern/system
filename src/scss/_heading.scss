@@ -5,13 +5,9 @@
 h1, h2, h3, h4, h5, h6 {
     color: $dark-grey;
     font-weight: 700;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.618em;
     line-height: $heading-line-height;
-}
-
-* + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
-* + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
-    @extend %top-margin;
+    margin-top: 1.33em;
 }
 
 
@@ -36,4 +32,19 @@ $start-max: map-get($start,max);
 
 	$start-min: $start-min * map-get($typescale,min);
     $start-max: $start-max * map-get($typescale,max);
+}
+
+
+// =============================================
+// Title
+// =============================================
+
+.title {
+    *:not(:last-child) {
+        margin-bottom: .1em;
+    }
+    *:last-child {
+        margin-top: .1em;
+        opacity: .6;
+    }
 }

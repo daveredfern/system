@@ -22,9 +22,9 @@
                         $color = get_post_meta(get_post_thumbnail_id(), 'dominant_color_hex');
                     ?>
                     <?php if($height > $width) : ?>
-                        <div class="u-portait">
+                        <div class="u-portait u-center">
                     <?php else: ?>
-                        <div class="u-landscape">
+                        <div class="u-landscape u-center">
                     <?php endif; ?>
                         <a href="<?php the_permalink(); ?>" class="u-ratio no-style" style="padding-top: <?php echo $ratio; ?>%;<?php if($color) { echo ' background-color:' . $color[0] . ';'; } ?> background-image: url(<?php the_post_thumbnail_url('photography-pixel'); ?>);">
                             <?php if ( has_post_thumbnail() ) : ?>

@@ -20,7 +20,7 @@
 		<hr />
 	</div>
 
-	<div class="grid g-four-up g-limit g-gutter-x">
+	<div class="grid g-four-up g-limit g-gutter-x u-section">
 		<div>
 			<p><strong>What I'm doing</strong><br />
 				 My <a href="<?php echo get_permalink(285); ?>">now page</a> shows what I'm focusing my efforts on.</p>
