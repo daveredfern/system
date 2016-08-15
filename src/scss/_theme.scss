@@ -13,10 +13,7 @@
         color: $green;
     }
 
-    h1, h2, h3,
-    .h1, .h2, .h3,
-    .lead,
-    .logo a {
+    h1, h2, h3, h4, h5, h6 {
         color: $lighter-grey;
     }
 
@@ -47,9 +44,7 @@
     }
 
     a,
-    .lead,
-    h1, h2, h3,
-    .h1, .h2, .h3 {
+    h1, h2, h3, h4, h5, h6 {
         color: $purple;
     }
 
