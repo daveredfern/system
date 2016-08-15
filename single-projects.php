@@ -6,9 +6,6 @@
 		<?php the_content(); ?>
 	</div>
 	<div class="u-container u-section">
-		<hr />
-	</div>
-	<div class="u-container u-section">
 		<h2>Other projects</h2>
 		<ul class="u-list-unstyled">
 	    <?php
