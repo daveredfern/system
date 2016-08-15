@@ -6,9 +6,6 @@
 		<?php the_content(); ?>
 	</div>
 	<div class="u-container u-section">
-		<p>Posted on <?php echo get_the_time('jS F Y'); ?></p>
-	</div>
-	<div class="u-container u-section">
 		<hr />
 	</div>
 	<div class="u-container u-section">
