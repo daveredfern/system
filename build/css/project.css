@@ -1,1 +1,1 @@
-.color-box{text-align:center}.color-box *{color:#fff}.color-box__body{width:90%}
+.title :not(:last-child){margin-bottom:.1em}.title :last-child{margin-top:.1em;opacity:.6}.color-box{text-align:center}.color-box *{color:#fff}.color-box__body{width:90%}

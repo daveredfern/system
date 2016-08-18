@@ -58,26 +58,6 @@
 
 
 // =============================================
-// Ratio
-// =============================================
-
-.u-ratio {
-    position: relative;
-	overflow: hidden;
-    padding-top: 100%;
-    display: block;
-    background-size: cover;
-
-    > * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-}
-
-
-// =============================================
 // Full width
 // =============================================
 
@@ -95,21 +75,6 @@
 .u-center {
     margin-left: auto;
     margin-right: auto;
-}
-
-
-// =============================================
-// Orientation
-// =============================================
-
-%u-portrait,
-.u-portait {
-    width: 70%;
-}
-
-%u-landscape,
-.u-landscape {
-    width: 85%;
 }
 
 
