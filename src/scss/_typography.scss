@@ -113,7 +113,7 @@ a:not(.logo),
     color: $blue;
     touch-action: manipulation;
     text-decoration: none;
-    box-shadow: 0 0.06em 0 0 currentColor;
+    border-bottom: 0.1em solid currentColor;
 
     &:hover {
         opacity: 0.6;
@@ -128,7 +128,7 @@ a:not(.logo),
 }
 
 a.no-style {
-    box-shadow: none;
+    border-bottom: 0;
 }
 
 
