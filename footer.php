@@ -27,18 +27,18 @@
 		</div>
 		<div>
 			<p><strong>Send me an email</strong><br />
-				<a href="mailto:dave@daveredfern.com">dave@daveredfern.com</a></p>
+				<a href="mailto:dave@daveredfern.com" rel="me">dave@daveredfern.com</a></p>
 		</div>
 		<div>
 			<p><strong>Follow me online</strong><br />
-				<a href="https://www.twitter.com/daveredfern">Twitter</a><br />
-				<a href="https://uk.linkedin.com/in/daveredfern">LinkedIn</a><br />
-				<a href="https://github.com/daveredfern">Github</a></p>
+				<a href="https://www.twitter.com/daveredfern" rel="me">Twitter</a><br />
+				<a href="https://uk.linkedin.com/in/daveredfern" rel="me">LinkedIn</a><br />
+				<a href="https://github.com/daveredfern" rel="me">Github</a></p>
 		</div>
 		<div>
 			<p><strong>Photography</strong><br />
 				<a href="/photography/">Gallery</a><br />
-				<a href="https://www.instagram.com/daveredfern/">Instagram</a></p>
+				<a href="https://www.instagram.com/daveredfern/" rel="me">Instagram</a></p>
 		</div>
 	</div>
 
